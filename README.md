@@ -16,23 +16,23 @@ them a real site first, and show it to the owner before I ever ask for anything.
 
 Most of my time goes into the machine behind that rather than the sites themselves.
 
-**Lead pipeline** &nbsp;·&nbsp; Python, SQLite
+**Lead pipeline** &nbsp;·&nbsp; Python, SQLite<br>
 Finds businesses with no site, then a fully deterministic enrichment pass digs
 out a public email, phone and socials and scores how certain it is. Self-hosted
 SearXNG and OpenStreetMap do the searching, so it runs at no cost per lookup, and
 it refuses to attach a contact it cannot tie back to the business.
 
-**Site builder** &nbsp;·&nbsp; Python, Jinja, static HTML
+**Site builder** &nbsp;·&nbsp; Python, Jinja, static HTML<br>
 Hand-written content specs compile into multi-page sites. Seven layout
 archetypes, so two previews never come out as the same skeleton in different
 colours, and an audit that fails a build for landing on a layout already in use.
 
-**Control panel** &nbsp;·&nbsp; Node, no framework
+**Control panel** &nbsp;·&nbsp; Node, no framework<br>
 Runs on my phone. Leads on a map, call sheets that know each business's own
 timezone and opening hours, the Instagram inbox, a file browser, and agents I can
 start and steer from anywhere.
 
-**Remote access** &nbsp;·&nbsp; Cloudflare tunnel, Guacamole, Tailscale
+**Remote access** &nbsp;·&nbsp; Cloudflare tunnel, Guacamole, Tailscale<br>
 A gateway with its own auth in front of all of it, plus an RDP desktop and a
 terminal in the browser, so the whole thing is usable from a locked-down
 Chromebook on a school network.
@@ -49,4 +49,4 @@ Chromebook on a school network.
 
 [onblitz.net](https://onblitz.net) &nbsp;·&nbsp; onblitzdesign@gmail.com
 
-<sub>The card up top is not a screenshot. <a href="scripts/neofetch.py">scripts/neofetch.py</a> rebuilds it from the GitHub API every morning.</sub>
+<sub>The card up top is not a screenshot. <a href="scripts/neofetch.py">scripts/neofetch.py</a> rebuilds it from the GitHub API every Monday.</sub>
