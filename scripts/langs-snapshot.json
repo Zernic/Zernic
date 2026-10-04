@@ -1,7 +1,7 @@
 {
-  "_note": "Full language byte totals across my own non-fork repos, public and private, taken 2026-10-04. The workflow's GITHUB_TOKEN can only see the public half, so this keeps the bar honest. Aggregates only, no repo names.",
+  "_note": "Totals across my own non-fork repos as they exist on GitHub, taken 2026-10-04. The workflow's GITHUB_TOKEN only sees the public half, so this keeps the card honest. Aggregates only, no repo names. Refresh with scripts/recount.sh.",
   "createdAt": "2020-07-30T04:02:31Z",
-  "fallbackRepoCount": 10,
+  "fallbackRepoCount": 11,
   "languages": {
     "Python": 548139,
     "TypeScript": 530666,
@@ -23,5 +23,7 @@
     "Shell": "#89e051",
     "Batchfile": "#C1F12E",
     "Procfile": "#3B2F63"
-  }
+  },
+  "commits": 130,
+  "lines": 54114
 }

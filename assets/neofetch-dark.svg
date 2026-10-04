@@ -1,177 +1,189 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="435" viewBox="0 0 900 435" role="img" aria-label="neofetch card for Zernic">
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="605" viewBox="0 0 1020 605" role="img" aria-label="neofetch card for Zernic">
 <defs>
-<linearGradient id="bolt" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#6e6e78"/></linearGradient>
-<clipPath id="barclip"><rect x="0" y="0" width="900" height="435" rx="5"/></clipPath>
+<linearGradient id="bolt" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#ffd166"/><stop offset="1" stop-color="#ff8c42"/></linearGradient>
+<clipPath id="barclip"><rect x="0" y="0" width="1020" height="605" rx="5"/></clipPath>
 </defs>
-<rect x="0.5" y="0.5" width="899" height="434" rx="14" fill="#0a0a0c" stroke="rgba(255,255,255,0.10)"/>
-<path d="M0 14a14 14 0 0 1 14-14h872a14 14 0 0 1 14 14v28H0z" fill="#121216"/>
-<line x1="0" y1="42" x2="900" y2="42" stroke="rgba(255,255,255,0.10)"/>
-<circle cx="22" cy="21.0" r="5" fill="#4a4a52" opacity="0.9"/>
-<circle cx="42" cy="21.0" r="5" fill="#4a4a52" opacity="0.7"/>
-<circle cx="62" cy="21.0" r="5" fill="#4a4a52" opacity="0.5"/>
-<text x="450.0" y="25.0" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b8b95">zernic@github: ~</text>
-<rect x="132" y="102" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="102" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="148" y="102" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="156" y="102" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="110" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="110" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="110" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="148" y="110" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="118" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="118" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="118" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="148" y="118" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="126" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="126" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="126" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="126" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="134" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="134" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="134" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="134" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="134" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="142" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="142" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="142" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="142" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="150" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="150" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="150" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="150" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="150" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="158" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="158" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="158" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="158" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="158" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="148" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="156" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="164" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="172" y="166" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="84" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="148" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="156" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="164" y="174" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="76" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="84" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="148" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="156" y="182" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="76" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="84" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="148" y="190" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="68" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="76" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="84" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="148" y="198" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="60" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="68" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="76" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="84" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="140" y="206" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="214" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="214" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="214" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="132" y="214" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="222" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="222" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="222" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="222" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="230" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="230" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="230" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="124" y="230" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="238" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="238" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="116" y="238" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="246" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="108" y="246" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="254" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="100" y="254" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="262" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<rect x="92" y="270" width="7" height="7" rx="1" fill="url(#bolt)"/>
-<text x="232" y="86" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="600" fill="#f4f4f6">joseph<tspan fill="#4a4a52">@</tspan>onblitz</text>
-<line x1="232" y1="96" x2="872" y2="96" stroke="rgba(255,255,255,0.10)"/>
-<text x="232" y="119" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">OS</text>
-<text x="348" y="119" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">Longview, Texas  ·  US Central</text>
-<text x="232" y="144" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">Host</text>
-<text x="348" y="144" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">Joseph Rodriguez</text>
-<text x="232" y="169" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">Kernel</text>
-<text x="348" y="169" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">Python, TypeScript, JavaScript</text>
-<text x="232" y="194" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">Uptime</text>
-<text x="348" y="194" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">6 years, 2 months, 4 days on GitHub</text>
-<text x="232" y="219" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">Shell</text>
-<text x="348" y="219" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">bash  ·  Claude Code</text>
-<text x="232" y="244" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">DE</text>
-<text x="348" y="244" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">a control panel I built, on my phone</text>
-<text x="232" y="269" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">Terminal</text>
-<text x="348" y="269" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">headless Ubuntu  ·  Tailscale  ·  Cloudflare tunnel</text>
-<text x="232" y="294" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">Packages</text>
-<text x="348" y="294" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">10 repos  ·  1.9 MB of source</text>
-<text x="232" y="319" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#f4f4f6">Building</text>
-<text x="348" y="319" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#8b8b95">OnBlitz - websites for businesses that have none</text>
-<text x="28" y="361" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.2" fill="#4a4a52">LANGUAGES</text>
-<g clip-path="url(#barclip)"><rect x="28" y="373" width="844" height="10" rx="5" fill="#1c1c21"/>
-<rect x="28.00" y="373" width="249.01" height="10" fill="#3572A5"/>
-<rect x="277.01" y="373" width="241.07" height="10" fill="#3178c6"/>
-<rect x="518.07" y="373" width="177.76" height="10" fill="#f1e05a"/>
-<rect x="695.83" y="373" width="95.88" height="10" fill="#e34c26"/>
-<rect x="791.71" y="373" width="41.55" height="10" fill="#663399"/>
-<rect x="833.27" y="373" width="36.20" height="10" fill="#a52a22"/>
-<rect x="869.47" y="373" width="2.36" height="10" fill="#89e051"/>
+<rect x="0.5" y="0.5" width="1019" height="604" rx="14" fill="#161b22" stroke="#30363d"/>
+<path d="M0 14a14 14 0 0 1 14-14h992a14 14 0 0 1 14 14v28H0z" fill="#21262d"/>
+<line x1="0" y1="42" x2="1020" y2="42" stroke="#30363d"/>
+<circle cx="22" cy="21.0" r="5" fill="#6e7681" opacity="0.9"/>
+<circle cx="42" cy="21.0" r="5" fill="#6e7681" opacity="0.7"/>
+<circle cx="62" cy="21.0" r="5" fill="#6e7681" opacity="0.5"/>
+<text x="510.0" y="25.0" text-anchor="middle" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b949e">zernic@github: ~</text>
+<rect x="166" y="140" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="140" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="190" y="140" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="202" y="140" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="152" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="152" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="152" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="190" y="152" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="164" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="164" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="164" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="190" y="164" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="176" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="176" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="176" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="176" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="188" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="188" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="188" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="188" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="188" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="200" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="200" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="200" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="200" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="212" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="212" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="212" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="212" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="212" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="224" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="224" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="224" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="224" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="224" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="190" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="202" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="214" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="226" y="236" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="94" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="190" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="202" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="214" y="248" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="82" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="94" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="190" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="202" y="260" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="82" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="94" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="190" y="272" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="70" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="82" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="94" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="190" y="284" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="58" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="70" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="82" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="94" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="178" y="296" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="308" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="308" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="308" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="166" y="308" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="320" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="320" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="320" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="320" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="332" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="332" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="332" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="154" y="332" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="344" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="344" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="142" y="344" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="356" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="130" y="356" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="368" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="118" y="368" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="380" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<rect x="106" y="392" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
+<text x="268" y="86" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="15" font-weight="600" fill="#ffa657">joseph<tspan fill="#6e7681">@</tspan><tspan fill="#a5d6ff">onblitz</tspan></text>
+<line x1="268" y1="96" x2="992" y2="96" stroke="#30363d"/>
+<text x="268" y="119" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">OS<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="119" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">Ubuntu 26.04, Windows 11, macOS</text>
+<text x="268" y="144" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Host<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="144" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">Longview, Texas</text>
+<text x="268" y="169" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Uptime<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="169" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">6 years, 2 months, 4 days on GitHub</text>
+<text x="268" y="194" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Shell<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="194" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">bash</text>
+<text x="268" y="219" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">IDE<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="219" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">Claude Code</text>
+<text x="268" y="244" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Project<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="244" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">OnBlitz</text>
+<text x="268" y="269" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Languages.Programming<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="269" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">Python, TypeScript, JavaScript</text>
+<text x="268" y="294" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Languages.Computer<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="294" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">HTML, CSS, Jinja, SQL, YAML</text>
+<text x="268" y="327" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="700" letter-spacing="0.6" fill="#d2a8ff">Contact</text>
+<line x1="268" y1="334" x2="992" y2="334" stroke="#30363d"/>
+<text x="268" y="354" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Email<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="354" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">jmr62810@gmail.com</text>
+<text x="268" y="379" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Website<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="379" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">onblitz.net</text>
+<text x="268" y="412" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="700" letter-spacing="0.6" fill="#d2a8ff">GitHub Stats</text>
+<line x1="268" y1="419" x2="992" y2="419" stroke="#30363d"/>
+<text x="268" y="439" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Repos<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="439" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">11</text>
+<text x="268" y="464" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Commits<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="464" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">130</text>
+<text x="268" y="489" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="600" fill="#ffa657">Lines of code<tspan fill="#6e7681">:</tspan></text>
+<text x="488" y="489" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#a5d6ff">54,114</text>
+<text x="28" y="531" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.2" fill="#6e7681">LANGUAGES</text>
+<g clip-path="url(#barclip)"><rect x="28" y="543" width="964" height="10" rx="5" fill="#21262d"/>
+<rect x="28.00" y="543" width="288.99" height="10" fill="#3572A5"/>
+<rect x="316.99" y="543" width="273.49" height="10" fill="#3178c6"/>
+<rect x="590.48" y="543" width="201.66" height="10" fill="#f1e05a"/>
+<rect x="792.14" y="543" width="108.78" height="10" fill="#e34c26"/>
+<rect x="900.91" y="543" width="47.14" height="10" fill="#663399"/>
+<rect x="948.06" y="543" width="41.07" height="10" fill="#a52a22"/>
+<rect x="989.13" y="543" width="2.67" height="10" fill="#89e051"/>
 </g>
-<rect x="28.0" y="398" width="10" height="10" rx="2.5" fill="#3572A5"/>
-<text x="44.0" y="407" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b8b95">Python 30%</text>
-<rect x="139.0" y="398" width="10" height="10" rx="2.5" fill="#3178c6"/>
-<text x="155.0" y="407" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b8b95">TypeScript 29%</text>
-<rect x="279.2" y="398" width="10" height="10" rx="2.5" fill="#f1e05a"/>
-<text x="295.2" y="407" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b8b95">JavaScript 21%</text>
-<rect x="419.4" y="398" width="10" height="10" rx="2.5" fill="#e34c26"/>
-<text x="435.4" y="407" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b8b95">HTML 11%</text>
-<rect x="515.8" y="398" width="10" height="10" rx="2.5" fill="#663399"/>
-<text x="531.8" y="407" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b8b95">CSS 5%</text>
-<rect x="597.5999999999999" y="398" width="10" height="10" rx="2.5" fill="#a52a22"/>
-<text x="613.5999999999999" y="407" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b8b95">Jinja 4%</text>
-<text x="872" y="407" text-anchor="end" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#4a4a52">refreshed 4 Oct 2026</text>
+<rect x="28.0" y="568" width="10" height="10" rx="2.5" fill="#3572A5"/>
+<text x="44.0" y="577" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b949e">Python 30%</text>
+<rect x="139.0" y="568" width="10" height="10" rx="2.5" fill="#3178c6"/>
+<text x="155.0" y="577" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b949e">TypeScript 28%</text>
+<rect x="279.2" y="568" width="10" height="10" rx="2.5" fill="#f1e05a"/>
+<text x="295.2" y="577" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b949e">JavaScript 21%</text>
+<rect x="419.4" y="568" width="10" height="10" rx="2.5" fill="#e34c26"/>
+<text x="435.4" y="577" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b949e">HTML 11%</text>
+<rect x="515.8" y="568" width="10" height="10" rx="2.5" fill="#663399"/>
+<text x="531.8" y="577" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b949e">CSS 5%</text>
+<rect x="597.5999999999999" y="568" width="10" height="10" rx="2.5" fill="#a52a22"/>
+<text x="613.5999999999999" y="577" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#8b949e">Jinja 4%</text>
+<text x="992" y="577" text-anchor="end" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#6e7681">refreshed 4 Oct 2026</text>
 </svg>

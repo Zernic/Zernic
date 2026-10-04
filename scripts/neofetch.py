@@ -138,29 +138,33 @@ def human_bytes(n: int) -> str:
 # ---------------------------------------------------------------- drawing
 
 DARK = {
-    "page": "none",
-    "card": "#0a0a0c",
-    "edge": "rgba(255,255,255,0.10)",
-    "bar": "#121216",
-    "fg": "#f4f4f6",
-    "dim": "#8b8b95",
-    "faint": "#4a4a52",
-    "bolt_a": "#ffffff",
-    "bolt_b": "#6e6e78",
-    "track": "#1c1c21",
+    "card": "#161b22",
+    "edge": "#30363d",
+    "bar": "#21262d",
+    "fg": "#e6edf3",
+    "key": "#ffa657",
+    "val": "#a5d6ff",
+    "sect": "#d2a8ff",
+    "dim": "#8b949e",
+    "faint": "#6e7681",
+    "bolt_a": "#ffd166",
+    "bolt_b": "#ff8c42",
+    "track": "#21262d",
 }
 
 LIGHT = {
-    "page": "none",
     "card": "#ffffff",
-    "edge": "rgba(0,0,0,0.12)",
-    "bar": "#f4f4f6",
-    "fg": "#17171c",
-    "dim": "#6b6b76",
-    "faint": "#b4b4bd",
-    "bolt_a": "#17171c",
-    "bolt_b": "#8d8d98",
-    "track": "#ececf0",
+    "edge": "#d0d7de",
+    "bar": "#f6f8fa",
+    "fg": "#1f2328",
+    "key": "#953800",
+    "val": "#0550ae",
+    "sect": "#8250df",
+    "dim": "#636c76",
+    "faint": "#8c959f",
+    "bolt_a": "#e3a008",
+    "bolt_b": "#bc4c00",
+    "track": "#eaeef2",
 }
 
 MONO = "ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace"
@@ -199,11 +203,13 @@ def bolt_cells() -> list[tuple[int, int]]:
     return cells
 
 
-W = 900
+SECTION = "\x00section"
+
+W = 1020
 PAD = 28
 HEAD = 42          # terminal title bar
-COL = 232          # where the info column starts
-VAL = 348          # where values start
+COL = 268          # where the info column starts
+VAL = 488          # where values start
 LINE = 25          # row pitch
 
 
@@ -213,8 +219,9 @@ def esc(s: str) -> str:
 
 def render(data: dict, rows: list[tuple[str, str]], c: dict, now: datetime) -> str:
     # first key baseline sits at HEAD + 77, then one LINE per row
-    body = max(77 + (len(rows) - 1) * LINE + 18,
-               BOLT_ROWS * (BOLT_CELL + BOLT_GAP) + 26)
+    extra = sum(10 for k, _ in rows if k == SECTION)
+    body = max(77 + (len(rows) - 1) * LINE + extra + 18,
+               BOLT_ROWS * (BOLT_CELL + BOLT_GAP) + 26)  # bolt floor
     H = HEAD + body + 98
     o: list[str] = []
     add = o.append
@@ -239,28 +246,39 @@ def render(data: dict, rows: list[tuple[str, str]], c: dict, now: datetime) -> s
     add(f'<text x="{W/2}" y="{HEAD/2 + 4}" text-anchor="middle" font-family="{MONO}" '
         f'font-size="12" fill="{c["dim"]}">zernic@github: ~</text>')
 
-    # bolt
-    pitch = BOLT_CELL + BOLT_GAP
-    bx = PAD + 32
+    # bolt, scaled to the art column and capped so it never outgrows the rows
+    bx = PAD + 26
+    avail_w = COL - bx - 26
+    pitch = min(avail_w // BOLT_COLS, (body - 24) // BOLT_ROWS)
+    cell = pitch - BOLT_GAP
+    bx += (avail_w - BOLT_COLS * pitch) // 2
     by = HEAD + round((body - BOLT_ROWS * pitch) / 2) + 4
     for col, r in bolt_cells():
         add(f'<rect x="{bx + col * pitch}" y="{by + r * pitch}" '
-            f'width="{BOLT_CELL}" height="{BOLT_CELL}" rx="1" fill="url(#bolt)"/>')
+            f'width="{cell}" height="{cell}" rx="1.5" fill="url(#bolt)"/>')
 
     # header line
     y = HEAD + 44
     add(f'<text x="{COL}" y="{y}" font-family="{MONO}" font-size="15" font-weight="600" '
-        f'fill="{c["fg"]}">joseph<tspan fill="{c["faint"]}">@</tspan>onblitz</text>')
+        f'fill="{c["key"]}">joseph<tspan fill="{c["faint"]}">@</tspan><tspan fill="{c["val"]}">onblitz</tspan></text>')
     y += 10
     add(f'<line x1="{COL}" y1="{y}" x2="{W - PAD}" y2="{y}" stroke="{c["edge"]}"/>')
 
-    # key/value rows
+    # key/value rows, with SECTION markers breaking them into blocks
     y += 23
     for key, val in rows:
+        if key == SECTION:
+            y += 8
+            add(f'<text x="{COL}" y="{y}" font-family="{MONO}" font-size="12" '
+                f'font-weight="700" letter-spacing="0.6" fill="{c["sect"]}">{esc(val)}</text>')
+            add(f'<line x1="{COL}" y1="{y + 7}" x2="{W - PAD}" y2="{y + 7}" '
+                f'stroke="{c["edge"]}"/>')
+            y += LINE + 2
+            continue
         add(f'<text x="{COL}" y="{y}" font-family="{MONO}" font-size="13" font-weight="600" '
-            f'fill="{c["fg"]}">{esc(key)}</text>')
+            f'fill="{c["key"]}">{esc(key)}<tspan fill="{c["faint"]}">:</tspan></text>')
         add(f'<text x="{VAL}" y="{y}" font-family="{MONO}" font-size="13" '
-            f'fill="{c["dim"]}">{esc(val)}</text>')
+            f'fill="{c["val"]}">{esc(val)}</text>')
         y += LINE
 
     # language bar, full width under both columns
@@ -300,18 +318,26 @@ def render(data: dict, rows: list[tuple[str, str]], c: dict, now: datetime) -> s
 def main() -> None:
     now = datetime.now(timezone.utc)
     data = collect()
-    top = ", ".join(l["name"] for l in data["languages"][:3])
+    snap = json.loads((ROOT / "scripts" / "langs-snapshot.json").read_text())
+    prog = ", ".join(l["name"] for l in data["languages"]
+                     if l["name"] in {"Python", "TypeScript", "JavaScript", "Go", "Rust"})
 
     rows = [
-        ("OS", "Longview, Texas  ·  US Central"),
-        ("Host", "Joseph Rodriguez"),
-        ("Kernel", top),
+        ("OS", "Ubuntu 26.04, Windows 11, macOS"),
+        ("Host", "Longview, Texas"),
         ("Uptime", f'{uptime(data["created"], now)} on GitHub'),
-        ("Shell", "bash  ·  Claude Code"),
-        ("DE", "a control panel I built, on my phone"),
-        ("Terminal", "headless Ubuntu  ·  Tailscale  ·  Cloudflare tunnel"),
-        ("Packages", f'{data["repos"]} repos  ·  {human_bytes(data["bytes"])} of source'),
-        ("Building", "OnBlitz - websites for businesses that have none"),
+        ("Shell", "bash"),
+        ("IDE", "Claude Code"),
+        ("Project", "OnBlitz"),
+        ("Languages.Programming", prog),
+        ("Languages.Computer", "HTML, CSS, Jinja, SQL, YAML"),
+        (SECTION, "Contact"),
+        ("Email", "jmr62810@gmail.com"),
+        ("Website", "onblitz.net"),
+        (SECTION, "GitHub Stats"),
+        ("Repos", str(data["repos"])),
+        ("Commits", f'{snap["commits"]:,}'),
+        ("Lines of code", f'{snap["lines"]:,}'),
     ]
 
     if "--print" in sys.argv:
@@ -322,7 +348,8 @@ def main() -> None:
     out.mkdir(exist_ok=True)
     (out / "neofetch-dark.svg").write_text(render(data, rows, DARK, now))
     (out / "neofetch-light.svg").write_text(render(data, rows, LIGHT, now))
-    print(f'wrote 2 svgs · {data["repos"]} repos · {human_bytes(data["bytes"])} · {top}')
+    print(f'wrote 2 svgs - {data["repos"]} repos, {snap["commits"]} commits, '
+          f'{snap["lines"]:,} lines, {human_bytes(data["bytes"])}')
 
 
 if __name__ == "__main__":
