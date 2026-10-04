@@ -13,16 +13,18 @@ Run it with no token and it still works, it just sees the public half.
 
 from __future__ import annotations
 
+import calendar
 import json
 import os
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 USER = "Zernic"
+BORN = date(2010, 6, 28)
 
 # utopia (2024) has node_modules committed, which is 7.9MB of vendored
 # JavaScript. Counting it makes the language bar a measurement artifact.
@@ -66,7 +68,7 @@ def api(token: str) -> dict:
 
 
 def collect() -> dict:
-    """Public data from the API, private data from the committed snapshot."""
+    """Public data from the API, the rest from the committed snapshot."""
     snapshot = json.loads((ROOT / "scripts" / "langs-snapshot.json").read_text())
     langs: dict[str, int] = {}
     colors: dict[str, str] = dict(snapshot.get("colors", {}))
@@ -102,6 +104,8 @@ def collect() -> dict:
         "created": created,
         "repos": max(repo_count, snapshot.get("fallbackRepoCount", 0)),
         "bytes": total,
+        "commits": snapshot["commits"],
+        "lines": snapshot["lines"],
         "languages": [
             {"name": n, "size": s, "pct": 100 * s / total,
              "color": colors.get(n, "#8b8b93")}
@@ -110,71 +114,79 @@ def collect() -> dict:
     }
 
 
-def uptime(created_iso: str, now: datetime) -> str:
-    born = datetime.fromisoformat(created_iso.replace("Z", "+00:00"))
-    years = now.year - born.year
-    months = now.month - born.month
-    days = now.day - born.day
+def ymd(start: date, end: date) -> tuple[int, int, int]:
+    """Calendar years, months and days between two dates."""
+    years = end.year - start.year
+    months = end.month - start.month
+    days = end.day - start.day
     if days < 0:
         months -= 1
-        days += 30
+        prev = end.month - 1 or 12
+        year = end.year if end.month > 1 else end.year - 1
+        days += calendar.monthrange(year, prev)[1]
     if months < 0:
         years -= 1
         months += 12
-    parts = [f"{years} years"]
-    if months:
-        parts.append(f"{months} months")
-    if days:
-        parts.append(f"{days} days")
-    return ", ".join(parts)
+    return years, months, days
 
 
-def human_bytes(n: int) -> str:
-    if n >= 1_000_000:
-        return f"{n / 1_000_000:.1f} MB"
-    return f"{n / 1_000:.0f} KB"
+def span(start: date, end: date, parts: int = 3) -> str:
+    y, m, d = ymd(start, end)
+    out = [f"{y} years"]
+    if m:
+        out.append(f"{m} months")
+    if d:
+        out.append(f"{d} days")
+    return ", ".join(out[:parts])
 
 
 # ---------------------------------------------------------------- drawing
 
 DARK = {
-    "card": "#161b22",
-    "edge": "#30363d",
-    "bar": "#21262d",
-    "fg": "#e6edf3",
+    "page": "#0d1117",      # GitHub's dark canvas, so the card has no seam
     "key": "#ffa657",
     "val": "#a5d6ff",
     "sect": "#d2a8ff",
+    "lead": "#30363d",      # the dotted leaders and the rules
     "dim": "#8b949e",
-    "faint": "#6e7681",
     "bolt_a": "#ffd166",
     "bolt_b": "#ff8c42",
     "track": "#21262d",
 }
 
 LIGHT = {
-    "card": "#ffffff",
-    "edge": "#d0d7de",
-    "bar": "#f6f8fa",
-    "fg": "#1f2328",
+    "page": "#ffffff",
     "key": "#953800",
     "val": "#0550ae",
     "sect": "#8250df",
-    "dim": "#636c76",
-    "faint": "#8c959f",
+    "lead": "#d0d7de",
+    "dim": "#656d76",
     "bolt_a": "#e3a008",
     "bolt_b": "#bc4c00",
     "track": "#eaeef2",
 }
 
-MONO = "ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace"
+MONO = ("ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',"
+        "Menlo,Consolas,'Liberation Mono',monospace")
 
 # The logo is a real lightning bolt polygon rasterised onto a grid, so it keeps
 # the blocky terminal feel without turning into a staircase the way a hand-drawn
-# low-resolution one does.
+# low-resolution one does. Swap this for an ASCII portrait when there is a photo.
 BOLT_POLY = [(62, 0), (14, 84), (44, 84), (32, 140), (90, 50), (58, 50), (80, 0)]
 BOLT_COLS, BOLT_ROWS = 15, 23
-BOLT_CELL, BOLT_GAP = 7, 1
+
+SECTION = "\x00section"
+
+W = 940
+PAD = 26
+COL = 252          # where the text column starts
+FS = 13.5          # row font size
+LINE = 24          # row pitch
+COLS = 76          # characters per row - this is what aligns the right edge
+
+
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
 def _inside(px: float, py: float, poly: list[tuple[int, int]]) -> bool:
@@ -193,142 +205,114 @@ def bolt_cells() -> list[tuple[int, int]]:
     xs = [p[0] for p in BOLT_POLY]
     ys = [p[1] for p in BOLT_POLY]
     w, h = max(xs) - min(xs), max(ys) - min(ys)
-    cells = []
-    for r in range(BOLT_ROWS):
-        for c in range(BOLT_COLS):
-            px = min(xs) + (c + 0.5) * w / BOLT_COLS
-            py = min(ys) + (r + 0.5) * h / BOLT_ROWS
-            if _inside(px, py, BOLT_POLY):
-                cells.append((c, r))
-    return cells
-
-
-SECTION = "\x00section"
-
-W = 1020
-PAD = 28
-HEAD = 42          # terminal title bar
-COL = 268          # where the info column starts
-VAL = 488          # where values start
-LINE = 25          # row pitch
-
-
-def esc(s: str) -> str:
-    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return [(c, r)
+            for r in range(BOLT_ROWS) for c in range(BOLT_COLS)
+            if _inside(min(xs) + (c + 0.5) * w / BOLT_COLS,
+                       min(ys) + (r + 0.5) * h / BOLT_ROWS, BOLT_POLY)]
 
 
 def render(data: dict, rows: list[tuple[str, str]], c: dict, now: datetime) -> str:
-    # first key baseline sits at HEAD + 77, then one LINE per row
-    extra = sum(10 for k, _ in rows if k == SECTION)
-    body = max(77 + (len(rows) - 1) * LINE + extra + 18,
-               BOLT_ROWS * (BOLT_CELL + BOLT_GAP) + 26)  # bolt floor
-    H = HEAD + body + 98
+    """Every line in the right column is exactly COLS monospace characters, so
+    the values line up on one right edge whatever font the reader actually has.
+    No pixel measuring, no textLength, nothing to drift."""
+    top = PAD + 16
+    n_sect = sum(1 for k, _ in rows if k == SECTION)
+    text_h = 28 + (len(rows) - 1) * LINE + n_sect * 12
+    bar_h = 34
+    H = top + text_h + 28 + bar_h + PAD
+
     o: list[str] = []
     add = o.append
-
     add(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
         f'viewBox="0 0 {W} {H}" role="img" aria-label="neofetch card for {USER}">')
-    add("<defs>")
-    add('<linearGradient id="bolt" x1="0" y1="0" x2="0.4" y2="1">'
+    add('<defs><linearGradient id="bolt" x1="0" y1="0" x2="0.4" y2="1">'
         f'<stop offset="0" stop-color="{c["bolt_a"]}"/>'
-        f'<stop offset="1" stop-color="{c["bolt_b"]}"/></linearGradient>')
-    add(f'<clipPath id="barclip"><rect x="0" y="0" width="{W}" height="{H}" rx="5"/></clipPath>')
-    add("</defs>")
+        f'<stop offset="1" stop-color="{c["bolt_b"]}"/></linearGradient></defs>')
+    add(f'<rect width="{W}" height="{H}" fill="{c["page"]}"/>')
 
-    # card + terminal chrome
-    add(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" '
-        f'fill="{c["card"]}" stroke="{c["edge"]}"/>')
-    add(f'<path d="M0 14a14 14 0 0 1 14-14h{W-28}a14 14 0 0 1 14 14v{HEAD-14}H0z" fill="{c["bar"]}"/>')
-    add(f'<line x1="0" y1="{HEAD}" x2="{W}" y2="{HEAD}" stroke="{c["edge"]}"/>')
-    for i, cx in enumerate((22, 42, 62)):
-        add(f'<circle cx="{cx}" cy="{HEAD/2}" r="5" fill="{c["faint"]}" '
-            f'opacity="{0.9 - i * 0.2:.1f}"/>')
-    add(f'<text x="{W/2}" y="{HEAD/2 + 4}" text-anchor="middle" font-family="{MONO}" '
-        f'font-size="12" fill="{c["dim"]}">zernic@github: ~</text>')
+    def line(y: float, runs: list[tuple[str, str]]) -> None:
+        """One monospace line built from (text, colour) runs."""
+        parts = "".join(f'<tspan fill="{col}">{esc(t)}</tspan>' for t, col in runs)
+        add(f'<text x="{COL}" y="{y}" font-family="{MONO}" font-size="{FS}" '
+            f'xml:space="preserve">{parts}</text>')
 
-    # bolt, scaled to the art column and capped so it never outgrows the rows
-    bx = PAD + 26
-    avail_w = COL - bx - 26
-    pitch = min(avail_w // BOLT_COLS, (body - 24) // BOLT_ROWS)
-    cell = pitch - BOLT_GAP
-    bx += (avail_w - BOLT_COLS * pitch) // 2
-    by = HEAD + round((body - BOLT_ROWS * pitch) / 2) + 4
-    for col, r in bolt_cells():
-        add(f'<rect x="{bx + col * pitch}" y="{by + r * pitch}" '
-            f'width="{cell}" height="{cell}" rx="1.5" fill="url(#bolt)"/>')
+    # header: joseph@rodriguez ------------------------------------------------
+    y = top + 12
+    head = "joseph@rodriguez"
+    line(y, [("joseph", c["key"]), ("@", c["dim"]), ("rodriguez", c["val"]),
+             (" " + "-" * (COLS - len(head) - 1), c["lead"])])
+    y += 28
 
-    # header line
-    y = HEAD + 44
-    add(f'<text x="{COL}" y="{y}" font-family="{MONO}" font-size="15" font-weight="600" '
-        f'fill="{c["key"]}">joseph<tspan fill="{c["faint"]}">@</tspan><tspan fill="{c["val"]}">onblitz</tspan></text>')
-    y += 10
-    add(f'<line x1="{COL}" y1="{y}" x2="{W - PAD}" y2="{y}" stroke="{c["edge"]}"/>')
-
-    # key/value rows, with SECTION markers breaking them into blocks
-    y += 23
     for key, val in rows:
         if key == SECTION:
-            y += 8
-            add(f'<text x="{COL}" y="{y}" font-family="{MONO}" font-size="12" '
-                f'font-weight="700" letter-spacing="0.6" fill="{c["sect"]}">{esc(val)}</text>')
-            add(f'<line x1="{COL}" y1="{y + 7}" x2="{W - PAD}" y2="{y + 7}" '
-                f'stroke="{c["edge"]}"/>')
-            y += LINE + 2
+            y += 12
+            label = f"- {val} "
+            line(y, [("- ", c["lead"]), (val, c["sect"]),
+                     (" " + "-" * (COLS - len(label) - 1), c["lead"])])
+            y += LINE
             continue
-        add(f'<text x="{COL}" y="{y}" font-family="{MONO}" font-size="13" font-weight="600" '
-            f'fill="{c["key"]}">{esc(key)}<tspan fill="{c["faint"]}">:</tspan></text>')
-        add(f'<text x="{VAL}" y="{y}" font-family="{MONO}" font-size="13" '
-            f'fill="{c["val"]}">{esc(val)}</text>')
+        dots = max(1, COLS - len(key) - 2 - 1 - len(val))
+        line(y, [(key, c["key"]), (":", c["dim"]), (" " + "." * dots + " ", c["lead"]),
+                 (val, c["val"])])
         y += LINE
 
-    # language bar, full width under both columns
-    top = HEAD + body + 24
-    add(f'<text x="{PAD}" y="{top}" font-family="{MONO}" font-size="11" '
-        f'letter-spacing="1.2" fill="{c["faint"]}">LANGUAGES</text>')
-    bar_y, bar_h, bar_w = top + 12, 10, W - PAD * 2
-    add(f'<g clip-path="url(#barclip)"><rect x="{PAD}" y="{bar_y}" width="{bar_w}" '
-        f'height="{bar_h}" rx="5" fill="{c["track"]}"/>')
-    x = float(PAD)
+    # bolt, sized to the art column and centred against the text block
+    art_w = COL - PAD - 34
+    pitch = min(art_w // BOLT_COLS, (text_h - 10) // BOLT_ROWS)
+    bx = PAD + 17 + (art_w - BOLT_COLS * pitch) // 2
+    by = top + (text_h - BOLT_ROWS * pitch) // 2
+    for col, r in bolt_cells():
+        add(f'<rect x="{bx + col * pitch}" y="{by + r * pitch}" '
+            f'width="{pitch - 1}" height="{pitch - 1}" rx="1.5" fill="url(#bolt)"/>')
+
+    # language bar: the neofetch colour blocks, carrying real percentages.
+    # Monospace is 0.6em wide in every font in the MONO stack, so this lands on
+    # the same right edge as the text above it. A font a hair off moves it a
+    # pixel or two, which is why nothing depends on the number being exact.
+    bar_y = top + text_h + 28
+    bar_w = round(COLS * FS * 0.6)
+    add(f'<clipPath id="bc"><rect x="{COL}" y="{bar_y}" width="{bar_w}" '
+        f'height="9" rx="4.5"/></clipPath>')
+    add(f'<g clip-path="url(#bc)"><rect x="{COL}" y="{bar_y}" width="{bar_w}" '
+        f'height="9" fill="{c["track"]}"/>')
+    x = float(COL)
     for lang in data["languages"]:
         seg = bar_w * lang["pct"] / 100
-        if seg < 0.6:
-            continue
-        add(f'<rect x="{x:.2f}" y="{bar_y}" width="{seg:.2f}" height="{bar_h}" '
-            f'fill="{lang["color"]}"/>')
+        if seg >= 0.6:
+            add(f'<rect x="{x:.2f}" y="{bar_y}" width="{seg:.2f}" height="9" '
+                f'fill="{lang["color"]}"/>')
         x += seg
     add("</g>")
 
-    # legend, doubling as neofetch's colour blocks
-    ly = bar_y + 34
-    x = float(PAD)
+    ly = bar_y + 30
+    x = float(COL)
     for lang in data["languages"][:6]:
-        add(f'<rect x="{x}" y="{ly - 9}" width="10" height="10" rx="2.5" fill="{lang["color"]}"/>')
+        add(f'<rect x="{x:.1f}" y="{ly - 8.5}" width="9" height="9" rx="2" '
+            f'fill="{lang["color"]}"/>')
         label = f'{lang["name"]} {lang["pct"]:.0f}%'
-        add(f'<text x="{x + 16}" y="{ly}" font-family="{MONO}" font-size="12" '
+        add(f'<text x="{x + 13:.1f}" y="{ly}" font-family="{MONO}" font-size="11.5" '
             f'fill="{c["dim"]}">{esc(label)}</text>')
-        x += 16 + len(label) * 7.3 + 22
+        x += 13 + len(label) * (11.5 * 0.6) + 16
 
-    stamp = now.strftime("%d %b %Y").lstrip("0")
-    add(f'<text x="{W - PAD}" y="{ly}" text-anchor="end" font-family="{MONO}" '
-        f'font-size="11" fill="{c["faint"]}">refreshed {stamp}</text>')
     add("</svg>")
     return "\n".join(o)
 
 
 def main() -> None:
     now = datetime.now(timezone.utc)
+    today = now.date()
     data = collect()
-    snap = json.loads((ROOT / "scripts" / "langs-snapshot.json").read_text())
+    joined = datetime.fromisoformat(data["created"].replace("Z", "+00:00")).date()
     prog = ", ".join(l["name"] for l in data["languages"]
                      if l["name"] in {"Python", "TypeScript", "JavaScript", "Go", "Rust"})
 
     rows = [
         ("OS", "Ubuntu 26.04, Windows 11, macOS"),
+        ("Uptime", span(BORN, today)),
         ("Host", "Longview, Texas"),
-        ("Uptime", f'{uptime(data["created"], now)} on GitHub'),
-        ("Shell", "bash"),
+        ("Kernel", "Founder, OnBlitz"),
         ("IDE", "Claude Code"),
-        ("Project", "OnBlitz"),
+        ("Shell", "bash"),
         ("Languages.Programming", prog),
         ("Languages.Computer", "HTML, CSS, Jinja, SQL, YAML"),
         (SECTION, "Contact"),
@@ -336,8 +320,9 @@ def main() -> None:
         ("Website", "onblitz.net"),
         (SECTION, "GitHub Stats"),
         ("Repos", str(data["repos"])),
-        ("Commits", f'{snap["commits"]:,}'),
-        ("Lines of code", f'{snap["lines"]:,}'),
+        ("Commits", f'{data["commits"]:,}'),
+        ("Lines of code", f'{data["lines"]:,}'),
+        ("On GitHub for", span(joined, today, parts=2)),
     ]
 
     if "--print" in sys.argv:
@@ -348,8 +333,8 @@ def main() -> None:
     out.mkdir(exist_ok=True)
     (out / "neofetch-dark.svg").write_text(render(data, rows, DARK, now))
     (out / "neofetch-light.svg").write_text(render(data, rows, LIGHT, now))
-    print(f'wrote 2 svgs - {data["repos"]} repos, {snap["commits"]} commits, '
-          f'{snap["lines"]:,} lines, {human_bytes(data["bytes"])}')
+    print(f'wrote 2 svgs - age {span(BORN, today)}, {data["repos"]} repos, '
+          f'{data["commits"]} commits, {data["lines"]:,} lines')
 
 
 if __name__ == "__main__":
