@@ -3,10 +3,6 @@ name: refresh neofetch card
 on:
   schedule:
     - cron: "0 11 * * *"   # daily, 06:00 America/Chicago (the age counts days)
-  push:
-    paths:
-      - "scripts/**"
-      - ".github/workflows/neofetch.yml"
   workflow_dispatch:
 
 permissions:
