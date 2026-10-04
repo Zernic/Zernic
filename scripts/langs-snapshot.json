@@ -1,0 +1,27 @@
+{
+  "_note": "Full language byte totals across my own non-fork repos, public and private, taken 2026-10-04. The workflow's GITHUB_TOKEN can only see the public half, so this keeps the bar honest. Aggregates only, no repo names.",
+  "createdAt": "2020-07-30T04:02:31Z",
+  "fallbackRepoCount": 10,
+  "languages": {
+    "Python": 548139,
+    "TypeScript": 530666,
+    "JavaScript": 391296,
+    "HTML": 211069,
+    "CSS": 91475,
+    "Jinja": 79698,
+    "Shell": 5187,
+    "Batchfile": 200,
+    "Procfile": 180
+  },
+  "colors": {
+    "Python": "#3572A5",
+    "TypeScript": "#3178c6",
+    "JavaScript": "#f1e05a",
+    "HTML": "#e34c26",
+    "CSS": "#663399",
+    "Jinja": "#a52a22",
+    "Shell": "#89e051",
+    "Batchfile": "#C1F12E",
+    "Procfile": "#3B2F63"
+  }
+}
