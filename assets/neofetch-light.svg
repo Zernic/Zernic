@@ -1,164 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="940" height="542" viewBox="0 0 940 542" role="img" aria-label="neofetch card for Zernic">
-<defs><linearGradient id="bolt" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#e3a008"/><stop offset="1" stop-color="#bc4c00"/></linearGradient></defs>
-<rect width="940" height="542" fill="#ffffff"/>
-<text x="252" y="54" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">joseph</tspan><tspan fill="#656d76">@</tspan><tspan fill="#0550ae">rodriguez</tspan><tspan fill="#d0d7de"> -----------------------------------------------------------</tspan></text>
-<text x="252" y="82" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">OS</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ........................................ </tspan><tspan fill="#0550ae">Ubuntu 26.04, Windows 11, macOS</tspan></text>
-<text x="252" y="106" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Uptime</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ......................................... </tspan><tspan fill="#0550ae">16 years, 3 months, 6 days</tspan></text>
-<text x="252" y="130" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Host</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ...................................................... </tspan><tspan fill="#0550ae">Longview, Texas</tspan></text>
-<text x="252" y="154" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Kernel</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ................................................... </tspan><tspan fill="#0550ae">Founder, OnBlitz</tspan></text>
-<text x="252" y="178" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">IDE</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ........................................................... </tspan><tspan fill="#0550ae">Claude Code</tspan></text>
-<text x="252" y="202" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Shell</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ................................................................ </tspan><tspan fill="#0550ae">bash</tspan></text>
-<text x="252" y="226" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Languages.Programming</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ...................... </tspan><tspan fill="#0550ae">Python, TypeScript, JavaScript</tspan></text>
-<text x="252" y="250" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Languages.Computer</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ............................ </tspan><tspan fill="#0550ae">HTML, CSS, Jinja, SQL, YAML</tspan></text>
-<text x="252" y="286" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#d0d7de">- </tspan><tspan fill="#8250df">Contact</tspan><tspan fill="#d0d7de"> -----------------------------------------------------------------</tspan></text>
-<text x="252" y="310" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Email</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> .................................................. </tspan><tspan fill="#0550ae">jmr62810@gmail.com</tspan></text>
-<text x="252" y="334" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Website</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ....................................................... </tspan><tspan fill="#0550ae">onblitz.net</tspan></text>
-<text x="252" y="370" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#d0d7de">- </tspan><tspan fill="#8250df">GitHub Stats</tspan><tspan fill="#d0d7de"> ------------------------------------------------------------</tspan></text>
-<text x="252" y="394" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Repos</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> .................................................................. </tspan><tspan fill="#0550ae">11</tspan></text>
-<text x="252" y="418" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Commits</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ............................................................... </tspan><tspan fill="#0550ae">130</tspan></text>
-<text x="252" y="442" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Lines of code</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ...................................................... </tspan><tspan fill="#0550ae">54,114</tspan></text>
-<text x="252" y="466" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">On GitHub for</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ........................................... </tspan><tspan fill="#0550ae">6 years, 2 months</tspan></text>
-<rect x="157" y="110" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="110" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="181" y="110" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="193" y="110" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="122" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="122" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="122" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="181" y="122" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="134" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="134" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="134" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="181" y="134" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="146" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="146" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="146" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="146" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="158" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="158" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="158" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="158" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="158" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="170" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="170" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="170" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="170" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="182" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="182" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="182" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="182" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="182" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="194" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="194" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="194" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="194" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="194" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="181" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="193" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="205" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="217" y="206" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="85" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="181" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="193" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="205" y="218" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="73" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="85" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="181" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="193" y="230" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="73" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="85" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="181" y="242" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="61" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="73" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="85" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="181" y="254" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="49" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="61" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="73" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="85" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="169" y="266" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="278" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="278" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="278" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="157" y="278" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="290" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="290" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="290" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="290" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="302" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="302" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="302" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="145" y="302" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="314" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="314" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="133" y="314" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="326" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="121" y="326" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="338" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="109" y="338" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="350" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<rect x="97" y="362" width="11" height="11" rx="1.5" fill="url(#bolt)"/>
-<clipPath id="bc"><rect x="252" y="482" width="616" height="9" rx="4.5"/></clipPath>
-<g clip-path="url(#bc)"><rect x="252" y="482" width="616" height="9" fill="#eaeef2"/>
-<rect x="252.00" y="482" width="184.81" height="9" fill="#3572A5"/>
-<rect x="436.81" y="482" width="174.52" height="9" fill="#3178c6"/>
-<rect x="611.33" y="482" width="128.69" height="9" fill="#f1e05a"/>
-<rect x="740.02" y="482" width="69.42" height="9" fill="#e34c26"/>
-<rect x="809.44" y="482" width="30.08" height="9" fill="#663399"/>
-<rect x="839.52" y="482" width="26.21" height="9" fill="#a52a22"/>
-<rect x="865.73" y="482" width="2.14" height="9" fill="#89e051"/>
-</g>
-<rect x="252.0" y="503.5" width="9" height="9" rx="2" fill="#3572A5"/>
-<text x="265.0" y="512" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#656d76">Python 30%</text>
-<rect x="350.0" y="503.5" width="9" height="9" rx="2" fill="#3178c6"/>
-<text x="363.0" y="512" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#656d76">TypeScript 28%</text>
-<rect x="475.6" y="503.5" width="9" height="9" rx="2" fill="#f1e05a"/>
-<text x="488.6" y="512" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#656d76">JavaScript 21%</text>
-<rect x="601.2" y="503.5" width="9" height="9" rx="2" fill="#e34c26"/>
-<text x="614.2" y="512" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#656d76">HTML 11%</text>
-<rect x="685.4" y="503.5" width="9" height="9" rx="2" fill="#663399"/>
-<text x="698.4" y="512" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#656d76">CSS 5%</text>
-<rect x="755.8" y="503.5" width="9" height="9" rx="2" fill="#a52a22"/>
-<text x="768.8" y="512" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#656d76">Jinja 4%</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="928" height="624" viewBox="0 0 928 624" role="img" aria-label="fastfetch output for Zernic">
+<defs><linearGradient id="art" gradientUnits="userSpaceOnUse" x1="0" y1="70" x2="0" y2="478.0"><stop offset="0" stop-color="#e3a008"/><stop offset="1" stop-color="#bc4c00"/></linearGradient></defs>
+<rect width="928" height="624" fill="#ffffff"/>
+<text x="26" y="40.0" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#1a7f37">joseph@rodriguez</tspan><tspan fill="#656d76">:</tspan><tspan fill="#0969da">~</tspan><tspan fill="#656d76">$ </tspan><tspan fill="#1f2328">fastfetch</tspan></text>
+<text x="26" y="83.0" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">                  *@@@@@@*</tspan></text>
+<text x="26" y="96.6" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">                 *@@@@@@%</tspan></text>
+<text x="26" y="110.2" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">                *@@@@@@@.</tspan></text>
+<text x="26" y="123.8" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">               *@@@@@@@.</tspan></text>
+<text x="26" y="137.4" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">              %@@@@@@@-</tspan></text>
+<text x="26" y="151.0" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">             %@@@@@@@*</tspan></text>
+<text x="26" y="164.6" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">            %@@@@@@@%</tspan></text>
+<text x="26" y="178.2" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">           %@@@@@@@%</tspan></text>
+<text x="26" y="191.8" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">         .%@@@@@@@@.</tspan></text>
+<text x="26" y="205.4" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">        .@@@@@@@@@-</tspan></text>
+<text x="26" y="219.0" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">       .@@@@@@@@@#:::::::::::.</tspan></text>
+<text x="26" y="232.6" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">      .@@@@@@@@@@@@@@@@@@@@@%.</tspan></text>
+<text x="26" y="246.2" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">     .@@@@@@@@@@@@@@@@@@@@@%</tspan></text>
+<text x="26" y="259.8" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">    -@@@@@@@@@@@@@@@@@@@@@*</tspan></text>
+<text x="26" y="273.4" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">   -@@@@@@@@@@@@@@@@@@@@@+</tspan></text>
+<text x="26" y="287.0" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">  -@@@@@@@@@@@@@@@@@@@@@-</tspan></text>
+<text x="26" y="300.6" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)"> -@@@@@@@@@@@@@@@@@@@@@.</tspan></text>
+<text x="26" y="314.2" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">-@@@@@@@@@@@@@@@@@@@@%.</tspan></text>
+<text x="26" y="327.8" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">           -@@@@@@@@*</tspan></text>
+<text x="26" y="341.4" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">           #@@@@@@@+</tspan></text>
+<text x="26" y="355.0" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">          .@@@@@@@-</tspan></text>
+<text x="26" y="368.6" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">          +@@@@@@:</tspan></text>
+<text x="26" y="382.2" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">          @@@@@%.</tspan></text>
+<text x="26" y="395.8" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">         -@@@@%</tspan></text>
+<text x="26" y="409.4" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">         *@@@*</tspan></text>
+<text x="26" y="423.0" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">        .@@@=</tspan></text>
+<text x="26" y="436.6" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">        +@@-</tspan></text>
+<text x="26" y="450.2" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">        %@.</tspan></text>
+<text x="26" y="463.8" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">       -%</tspan></text>
+<text x="26" y="477.4" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" xml:space="preserve"><tspan fill="url(#art)">       -</tspan></text>
+<text x="286" y="83.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">joseph</tspan><tspan fill="#656d76">@</tspan><tspan fill="#0550ae">rodriguez</tspan><tspan fill="#d0d7de"> -----------------------------------------------------------</tspan></text>
+<text x="286" y="107.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">OS</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> .............................................. </tspan><tspan fill="#0550ae">Ubuntu, Windows 11, macOS</tspan></text>
+<text x="286" y="130.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Uptime</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ......................................... </tspan><tspan fill="#0550ae">16 years, 3 months, 7 days</tspan></text>
+<text x="286" y="153.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Host</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ...................................................... </tspan><tspan fill="#0550ae">Longview, Texas</tspan></text>
+<text x="286" y="176.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Kernel</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ................................................... </tspan><tspan fill="#0550ae">Founder, OnBlitz</tspan></text>
+<text x="286" y="199.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">IDE</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ........................................................... </tspan><tspan fill="#0550ae">Claude Code</tspan></text>
+<text x="286" y="222.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Shell</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ................................................................ </tspan><tspan fill="#0550ae">bash</tspan></text>
+<text x="286" y="245.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Languages.Programming</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ...................... </tspan><tspan fill="#0550ae">Python, TypeScript, JavaScript</tspan></text>
+<text x="286" y="268.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Languages.Computer</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ............................ </tspan><tspan fill="#0550ae">HTML, CSS, Jinja, SQL, YAML</tspan></text>
+<text x="286" y="291.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Hobbies.Software</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ........................... </tspan><tspan fill="#0550ae">self-hosting, local LLMs, bots</tspan></text>
+<text x="286" y="314.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Hobbies.Hardware</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ................................ </tspan><tspan fill="#0550ae">home server, Raspberry Pi</tspan></text>
+<text x="286" y="337.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Hobbies.Offline</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> .................................... </tspan><tspan fill="#0550ae">football, Call of Duty</tspan></text>
+<text x="286" y="371.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#d0d7de">- </tspan><tspan fill="#8250df">Contact</tspan><tspan fill="#d0d7de"> -----------------------------------------------------------------</tspan></text>
+<text x="286" y="394.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Email</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> .................................................. </tspan><tspan fill="#0550ae">jmr62810@gmail.com</tspan></text>
+<text x="286" y="417.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Website</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ....................................................... </tspan><tspan fill="#0550ae">onblitz.net</tspan></text>
+<text x="286" y="451.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#d0d7de">- </tspan><tspan fill="#8250df">GitHub Stats</tspan><tspan fill="#d0d7de"> ------------------------------------------------------------</tspan></text>
+<text x="286" y="474.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Repos</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> .................................................................. </tspan><tspan fill="#0550ae">11</tspan></text>
+<text x="286" y="497.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Commits</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ............................................................... </tspan><tspan fill="#0550ae">130</tspan></text>
+<text x="286" y="520.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">Lines of code</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ...................................................... </tspan><tspan fill="#0550ae">54,114</tspan></text>
+<text x="286" y="543.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#953800">On GitHub for</tspan><tspan fill="#656d76">:</tspan><tspan fill="#d0d7de"> ........................................... </tspan><tspan fill="#0550ae">6 years, 2 months</tspan></text>
+<text x="286" y="567.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#3572A5">███</tspan><tspan fill="#3178c6">███</tspan><tspan fill="#f1e05a">███</tspan><tspan fill="#e34c26">███</tspan><tspan fill="#663399">███</tspan><tspan fill="#a52a22">███</tspan><tspan fill="#89e051">███</tspan><tspan fill="#C1F12E">███</tspan></text>
+<text x="26" y="597.5" font-family="ui-monospace,'SF Mono',SFMono-Regular,'JetBrains Mono','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="13.5" xml:space="preserve"><tspan fill="#1a7f37">joseph@rodriguez</tspan><tspan fill="#656d76">:</tspan><tspan fill="#0969da">~</tspan><tspan fill="#656d76">$ </tspan><tspan fill="#1f2328">█</tspan></text>
 </svg>

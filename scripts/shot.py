@@ -18,7 +18,7 @@ bg = sys.argv[3] if len(sys.argv) > 3 else "#0d1117"
 tmp = out.with_suffix(".html")
 tmp.write_text(
     f'<html><body style="margin:0;padding:28px;background:{bg};'
-    f'display:inline-block"><img src="file://{src}" width="940"></body></html>'
+    f'display:inline-block"><img src="file://{src}" width="928"></body></html>'
 )
 with sync_playwright() as p:
     browser = p.chromium.launch()
