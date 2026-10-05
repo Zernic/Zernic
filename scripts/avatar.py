@@ -162,9 +162,124 @@ def sheet(opts: list[tuple[str, Image.Image]]) -> Image.Image:
     return img
 
 
+# ------------------------------------------------- second set (2026-10-04)
+# He liked B, so three more in the prompt family plus three from the other
+# half of what he does. All judged circle-cropped at 40px, same as the first.
+
+import math
+
+
+def _prompt(cursor: str, chev: str = ">", chev_col=GREEN, cur_col=WHITE,
+            bolt_cursor: bool = False) -> Image.Image:
+    img = Image.new("RGB", (S, S), BG)
+    d = ImageDraw.Draw(img)
+    f = ImageFont.truetype(MONO, 250)
+    d.text((S * 0.17, S * 0.46), chev, font=f, fill=chev_col, anchor="lm")
+    if bolt_cursor:
+        big = S * SS
+        mask = Image.new("L", (big, big), 0)
+        pts = [(x * 0.44 + big * 0.47, y * 0.44 + big * 0.27)
+               for x, y in fit_bolt(big, big * 0.12)]
+        ImageDraw.Draw(mask).polygon(pts, fill=255)
+        img.paste(ember(S), (0, 0), mask.resize((S, S), Image.LANCZOS))
+        return img
+    if cursor == "block":
+        bw, bh = S * 0.17, S * 0.27
+        bx, by = S * 0.50, S * 0.50
+        d.rectangle([bx, by - bh / 2, bx + bw, by + bh / 2], fill=cur_col)
+    else:                                    # underscore
+        bw, bh = S * 0.24, S * 0.055
+        bx, by = S * 0.50, S * 0.63
+        d.rounded_rectangle([bx, by, bx + bw, by + bh], radius=bh / 2, fill=cur_col)
+    return img
+
+
+def option_d() -> Image.Image:
+    """`>_` - the underscore cursor instead of the block. Lighter."""
+    return _prompt("under")
+
+
+def option_e() -> Image.Image:
+    """`$` in ember with a block cursor. Reads as a shell without the chevron
+    everyone uses."""
+    return _prompt("block", chev="$", chev_col=EMBER_A)
+
+
+def option_f() -> Image.Image:
+    """B, but the cursor is the bolt. Merges the prompt and the logo."""
+    return _prompt("block", bolt_cursor=True)
+
+
+def option_g() -> Image.Image:
+    """Camera aperture. The film half, and an iris is geometric enough to
+    survive 40px where a camera body would not."""
+    big = S * SS
+    c, R, r = big / 2, big * 0.38, big * 0.38 * 0.44
+    disc = Image.new("L", (big, big), 0)
+    ImageDraw.Draw(disc).ellipse([c - R, c - R, c + R, c + R], fill=255)
+    d = ImageDraw.Draw(disc)
+    hexa = [(c + r * math.cos(math.radians(60 * i - 90)),
+             c + r * math.sin(math.radians(60 * i - 90))) for i in range(6)]
+    d.polygon(hexa, fill=0)
+    for i, (vx, vy) in enumerate(hexa):           # the blade separations
+        a = math.radians(60 * i - 90 + 62)
+        d.line([vx, vy, c + R * 1.1 * math.cos(a), c + R * 1.1 * math.sin(a)],
+               fill=0, width=int(big * 0.016))
+    img = Image.new("RGB", (S, S), BG)
+    img.paste(ember(S), (0, 0), disc.resize((S, S), Image.LANCZOS))
+    return img
+
+
+def option_h() -> Image.Image:
+    """Waveform. The music half, and bars are the most legible thing there is
+    at small sizes."""
+    heights = [0.30, 0.58, 0.92, 0.46, 0.76, 0.34, 0.62]
+    big = S * SS
+    layer = Image.new("L", (big, big), 0)
+    d = ImageDraw.Draw(layer)
+    span_w = big * 0.62
+    bw = span_w / (len(heights) * 2 - 1)
+    x = (big - span_w) / 2
+    for h in heights:
+        bh = big * 0.62 * h
+        d.rounded_rectangle([x, big / 2 - bh / 2, x + bw, big / 2 + bh / 2],
+                            radius=bw / 2, fill=255)
+        x += bw * 2
+    img = Image.new("RGB", (S, S), BG)
+    img.paste(ember(S), (0, 0), layer.resize((S, S), Image.LANCZOS))
+    return img
+
+
+def option_i() -> Image.Image:
+    """The bolt knocked OUT of a filled ember disc. Same mark, opposite
+    weight - a solid shape instead of a thin one, which holds up better when
+    the avatar is 20px in a hover card."""
+    big = S * SS
+    disc = Image.new("L", (big, big), 0)
+    dd = ImageDraw.Draw(disc)
+    R = big * 0.40
+    dd.ellipse([big / 2 - R, big / 2 - R, big / 2 + R, big / 2 + R], fill=255)
+    dd.polygon(fit_bolt(big, big * 0.20), fill=0)
+    img = Image.new("RGB", (S, S), BG)
+    img.paste(ember(S), (0, 0), disc.resize((S, S), Image.LANCZOS))
+    return img
+
+
+SET2 = [("D  >_", option_d), ("E  $ block", option_e), ("F  bolt cursor", option_f),
+        ("G  aperture", option_g), ("H  waveform", option_h), ("I  bolt disc", option_i)]
+
+
 def main() -> None:
     out = Path(sys.argv[1] if len(sys.argv) > 1 else ".")
     out.mkdir(parents=True, exist_ok=True)
+    if "--set2" in sys.argv:
+        opts = [(n, fn()) for n, fn in SET2]
+        for name, img in opts:
+            img.save(out / f"avatar-{name.split()[0].lower()}.png")
+        sheet(opts[:3]).save(out / "avatar-options-2a.png")
+        sheet(opts[3:]).save(out / "avatar-options-2b.png")
+        print(f"wrote {out}/avatar-options-2a.png + 2b.png and avatar-d..i.png")
+        return
     opts = [("A  bolt", option_a()),
             ("B  prompt", option_b()),
             ("C  ascii bolt", option_c())]
